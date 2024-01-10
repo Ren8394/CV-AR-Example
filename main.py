@@ -43,7 +43,7 @@ if __name__ == "__main__":
     # hyperparameters
     batch_size = 32
     lr = 1e-4
-    epochs = 10
+    epochs = 25
 
     # optimizer
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr)
