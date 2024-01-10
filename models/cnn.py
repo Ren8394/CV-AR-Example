@@ -23,6 +23,13 @@ class CNN(nn.Module):
             nn.ReLU(),
             nn.Linear(64, num_classes)
         )
+        self._init_weights()
+
+    def _init_weights(self):
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d) or isinstance(m, nn.Linear):
+                nn.init.xavier_uniform_(m.weight)
+                nn.init.zeros_(m.bias)
         
     def forward(self, x):
         x = self.features(x)
