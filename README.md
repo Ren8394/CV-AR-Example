@@ -1,11 +1,12 @@
 
-# CV-AR_Example
+# CV-AR-Example
 
 ---
 
 ## Dataset
 
 Kaggle HAR Dataset: [https://www.kaggle.com/uciml/human-activity-recognition-with-smartphones](https://www.kaggle.com/uciml/human-activity-recognition-with-smartphones)
+
 Please register a Kaggle account, download the dataset, and extract it to the `data` directory of this project.
 
 After extracting the dataset, the `data` directory structure should look like this:
@@ -38,8 +39,8 @@ sh run.sh
 
 File explanation:
 
-1. `run.sh`: The script to run the example. (vgg16 model is used and set as defalut neteork in this example)
-2. `main.py`: The main script to run the example. It contains the following training, validation, and testing steps.
+1. `run.sh`: The script to run the example. (vgg16 model is used and set as defalut network in this example)
+2. `main.py`: The main script to run the example. It contains the training, validation, and testing steps.
 3. `results_vis.ipynb`: This file is used to easily visualize the results of the example.
 4. `data/HAR_parsing.py`: This file is used to parse, preprocess, and split the dataset.
 5. `dataset/HAR.py`: This file is used to define the dataset class. You can see the code to understand how the dataset is defined, and how the data is loaded.
