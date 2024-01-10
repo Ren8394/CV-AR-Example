@@ -27,7 +27,7 @@ CLASS_LIST = [
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Human Activity Recognition")
-    parser.add_argument("--model", type=str, default="cnn", help="model name")
+    parser.add_argument("--model", type=str, default="vgg", help="model name")
 
     args = parser.parse_args()
     return args
