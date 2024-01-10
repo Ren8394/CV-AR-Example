@@ -13,8 +13,6 @@ from models import CNN, VGG16
 
 if torch.cuda.is_available():
     DEVICE = torch.device("cuda")
-elif torch.backends.mps.is_available():
-    DEVICE = torch.device("mps")
 else:
     DEVICE = torch.device("cpu")
 print(f"Using {DEVICE}")
@@ -45,7 +43,7 @@ if __name__ == "__main__":
     # hyperparameters
     batch_size = 32
     lr = 1e-4
-    epochs = 250
+    epochs = 10
 
     # optimizer
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr)
